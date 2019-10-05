@@ -9,3 +9,11 @@ docker run -d -p 8081:8081 saurabhdev01/emp-service:latest
 # Map Volume
 docker run -d -v /var/log/app:/var/log/Application/
 # http://localhost:8081/springbootapp/employees
+
+#Non Docker
+pull the code
+cd spring-boot
+mvn clean install
+cd /target/
+java -jar nameof_checkfor.war
+http://localhost:8081/springbootapp/employees
